@@ -1,0 +1,33 @@
+/* Start of Flip Clock blue CSS */
+.flip-clock.flipclock-blue div{
+  font-family: 'Droid Sans', serif;
+  font-weight: bold;
+  color:         white;
+  background:    #05a19f;
+  -moz-box-shadow:    3px 3px 3px #05616f;
+  -webkit-box-shadow: 3px 3px 3px #05616f;
+  box-shadow:         3px 3px 3px #05616f;
+  margin: 1px;
+  opacity: 0.4;
+}
+/* End of Flip Clock blue CSS */
+
+/* Start of Flip Clock linear CSS */
+.flipclock-linear .flip-top-animate {
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+}
+
+.flipclock-linear .flip-bottom-animate {
+  animation-timing-function: linear;
+  animation-duration: 0.2s;
+}
+/* End of Flip Clock linear CSS */
+#clock {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1001;
+}
+
+

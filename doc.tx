@@ -1,0 +1,1 @@
+fgrep 2019 ../photos.lst | sort -n | tail -15 | cut -c6- | awk '{printf("ln -s /Volumes/Lacie4TB/Pictures/2010Pictures/2019/%s\n",$1);}'

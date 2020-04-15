@@ -1,0 +1,111 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+#title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  font-family: 'Droid Sans', serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 3px #555;
+  margin: 5px;
+  opacity: 0.7;
+  font-size: 40px;
+}
+#location {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  font-family: 'Droid Sans', serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 3px #555;
+  margin: 5px;
+  opacity: 0.7;
+  font-size: 40px;
+}
+#debug {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+  font-family: 'Droid Sans', serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 3px #555;
+  margin: 5px;
+  opacity: 0.7;
+  font-size: 10px;
+}
+li {
+	position: absolute;
+    overflow: hidden;
+  	left: 0;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	font-color: green;
+  	font-size: 80px;
+}
+	
+img {
+    /*height: 100%;*/
+    min-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cache {
+	display:none;
+}
+
+#slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*** SPECIAL FX ***/
+.slideLeft{animation-name:slideLeft;-webkit-animation-name:slideLeft;animation-duration:1s;-webkit-animation-duration:1s;animation-timing-function:ease-in-out;-webkit-animation-timing-function:ease-in-out;visibility:visible!important}@keyframes slideLeft{0%{transform:translateX(150%)}50%{transform:translateX(-8%)}65%{transform:translateX(4%)}80%{transform:translateX(-4%)}95%{transform:translateX(2%)}100%{transform:translateX(0%)}}@-webkit-keyframes slideLeft{0%{-webkit-transform:translateX(150%)}50%{-webkit-transform:translateX(-8%)}65%{-webkit-transform:translateX(4%)}80%{-webkit-transform:translateX(-4%)}95%{-webkit-transform:translateX(2%)}100%{-webkit-transform:translateX(0%)}}
+.slideRight{animation-name:slideRight;-webkit-animation-name:slideRight;animation-duration:1s;-webkit-animation-duration:1s;animation-timing-function:ease-in-out;-webkit-animation-timing-function:ease-in-out;visibility:visible!important}@keyframes slideRight{0%{transform:translateX(-150%)}50%{transform:translateX(8%)}65%{transform:translateX(-4%)}80%{transform:translateX(4%)}95%{transform:translateX(-2%)}100%{transform:translateX(0%)}}@-webkit-keyframes slideRight{0%{-webkit-transform:translateX(-150%)}50%{-webkit-transform:translateX(8%)}65%{-webkit-transform:translateX(-4%)}80%{-webkit-transform:translateX(4%)}95%{-webkit-transform:translateX(-2%)}100%{-webkit-transform:translateX(0%)}}
+
+.fadeIn{animation-name:fadeIn;-webkit-animation-name:fadeIn;animation-duration:1.5s;-webkit-animation-duration:1.5s;animation-timing-function:ease-in-out;-webkit-animation-timing-function:ease-in-out;visibility:visible!important}@keyframes fadeIn{0%{transform:scale(0);opacity:0}60%{transform:scale(1.1)}80%{transform:scale(0.9);opacity:1}100%{transform:scale(1);opacity:1}}@-webkit-keyframes fadeIn{0%{-webkit-transform:scale(0);opacity:0}60%{-webkit-transform:scale(1.1)}80%{-webkit-transform:scale(0.9);opacity:1}100%{-webkit-transform:scale(1);opacity:1}}
+
+.bigEntrance{animation-name:bigEntrance;-webkit-animation-name:bigEntrance;animation-duration:1.6s;-webkit-animation-duration:1.6s;animation-timing-function:ease-out;-webkit-animation-timing-function:ease-out;visibility:visible!important}@keyframes bigEntrance{0%{transform:scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);opacity:.2}30%{transform:scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);opacity:1}45%{transform:scale(0.98) rotate(1deg) translateX(0%) translateY(0%);opacity:1}60%{transform:scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);opacity:1}75%{transform:scale(0.99) rotate(1deg) translateX(0%) translateY(0%);opacity:1}90%{transform:scale(1.01) rotate(0deg) translateX(0%) translateY(0%);opacity:1}100%{transform:scale(1) rotate(0deg) translateX(0%) translateY(0%);opacity:1}}@-webkit-keyframes bigEntrance{0%{-webkit-transform:scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);opacity:.2}30%{-webkit-transform:scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);opacity:1}45%{-webkit-transform:scale(0.98) rotate(1deg) translateX(0%) translateY(0%);opacity:1}60%{-webkit-transform:scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);opacity:1}75%{-webkit-transform:scale(0.99) rotate(1deg) translateX(0%) translateY(0%);opacity:1}90%{-webkit-transform:scale(1.01) rotate(0deg) translateX(0%) translateY(0%);opacity:1}100%{-webkit-transform:scale(1) rotate(0deg) translateX(0%) translateY(0%);opacity:1}}
+.pullUp{animation-name:pullUp;-webkit-animation-name:pullUp;animation-duration:1.1s;-webkit-animation-duration:1.1s;animation-timing-function:ease-out;-webkit-animation-timing-function:ease-out;transform-origin:50% 100%;-ms-transform-origin:50% 100%;-webkit-transform-origin:50% 100%}@keyframes pullUp{0%{transform:scaleY(0.1)}40%{transform:scaleY(1.02)}100%,60%{transform:scaleY(0.98)}80%{transform:scaleY(1.01)}100%{transform:scaleY(1)}}@-webkit-keyframes pullUp{0%{-webkit-transform:scaleY(0.1)}40%{-webkit-transform:scaleY(1.02)}100%,60%{-webkit-transform:scaleY(0.98)}80%{-webkit-transform:scaleY(1.01)}100%{-webkit-transform:scaleY(1)}}
+.pullDown{animation-name:pullDown;-webkit-animation-name:pullDown;animation-duration:1.1s;-webkit-animation-duration:1.1s;animation-timing-function:ease-out;-webkit-animation-timing-function:ease-out;transform-origin:50% 0;-ms-transform-origin:50% 0;-webkit-transform-origin:50% 0}@keyframes pullDown{0%{transform:scaleY(0.1)}40%{transform:scaleY(1.02)}100%,60%{transform:scaleY(0.98)}80%{transform:scaleY(1.01)}100%{transform:scaleY(1)}}@-webkit-keyframes pullDown{0%{-webkit-transform:scaleY(0.1)}40%{-webkit-transform:scaleY(1.02)}100%,60%{-webkit-transform:scaleY(0.98)}80%{-webkit-transform:scaleY(1.01)}100%{-webkit-transform:scaleY(1)}}
+.stretchLeft{animation-name:stretchLeft;-webkit-animation-name:stretchLeft;animation-duration:1.5s;-webkit-animation-duration:1.5s;animation-timing-function:ease-out;-webkit-animation-timing-function:ease-out;transform-origin:100% 0;-ms-transform-origin:100% 0;-webkit-transform-origin:100% 0}@keyframes stretchLeft{0%{transform:scaleX(0.3)}40%{transform:scaleX(1.02)}100%,60%{transform:scaleX(0.98)}80%{transform:scaleX(1.01)}100%{transform:scaleX(1)}}@-webkit-keyframes stretchLeft{0%{-webkit-transform:scaleX(0.3)}40%{-webkit-transform:scaleX(1.02)}100%,60%{-webkit-transform:scaleX(0.98)}80%{-webkit-transform:scaleX(1.01)}100%{-webkit-transform:scaleX(1)}}
+.stretchRight{animation-name:stretchRight;-webkit-animation-name:stretchRight;animation-duration:1.5s;-webkit-animation-duration:1.5s;animation-timing-function:ease-out;-webkit-animation-timing-function:ease-out;transform-origin:0 0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0}@keyframes stretchRight{0%{transform:scaleX(0.3)}40%{transform:scaleX(1.02)}100%,60%{transform:scaleX(0.98)}80%{transform:scaleX(1.01)}100%{transform:scaleX(1)}}@-webkit-keyframes stretchRight{0%{-webkit-transform:scaleX(0.3)}40%{-webkit-transform:scaleX(1.02)}100%,60%{-webkit-transform:scaleX(0.98)}80%{-webkit-transform:scaleX(1.01)}100%{-webkit-transform:scaleX(1)}}
+
+/*kenburns-left 6s linear both 20.5s, fade-out 2s ease-in forwards 25.5s;*/
+/*
+.kenburnsTop{animation-name:kenburnsTop;animation-duration:7.5s; animation-timing-function:linear;}
+@keyframes kenburnsTop {0% { transform: scale(1) translateY(0); transform-origin: 50% 16%; } 100% { transform: scale(1.25) translateY(-15px); transform-origin: top; }}
+.kenburnsBottom{animation-name:kenburnsBottom;animation-duration:7.5s; animation-timing-function:linear}
+@keyframes kenburnsBottom { 0% { transform: scale(1) translateY(0); transform-origin: 50% 84%; } 100% { transform: scale(1.25) translateY(15px); transform-origin: bottom; }}
+.kenburnsRight{animation-name:kenburnsRight;animation-duration:7.5s; animation-timing-function:linear}
+@keyframes kenburnsRight { 0% { transform: scale(1) translate(0, 0); transform-origin: 84% 50%; } 100% { transform: scale(1.25) translateX(20px); transform-origin: right; }}
+.kenburnsLeft{animation-name:kenburnsLeft;animation-duration:7.5s; animation-timing-function:linear}
+@keyframes kenburnsLeft{ 0% { transform: scale(1) translate(0, 0); transform-origin: 16% 50%; } 100% { transform: scale(1.25) translate(-20px, 15px); transform-origin: left; }}
+*/
+
+.kenburnsTop{animation-name:kenburnsTop;animation-duration:7.5s; animation-timing-function:steps(5, jump-end);}
+@keyframes kenburnsTop {0% { transform: scale(1) translateY(0); transform-origin: 50% 16%; } 100% { transform: scale(1.25) translateY(-15px); transform-origin: top; }}
+.kenburnsBottom{animation-name:kenburnsBottom;animation-duration:7.5s; animation-timing-function:steps(5, jump-end);}
+@keyframes kenburnsBottom { 0% { transform: scale(1) translateY(0); transform-origin: 50% 84%; } 100% { transform: scale(1.25) translateY(15px); transform-origin: bottom; }}
+.kenburnsRight{animation-name:kenburnsRight;animation-duration:7.5s; animation-timing-function:steps(5, jump-end);}
+@keyframes kenburnsRight { 0% { transform: scale(1) translate(0, 0); transform-origin: 84% 50%; } 100% { transform: scale(1.25) translateX(20px); transform-origin: right; }}
+.kenburnsLeft{animation-name:kenburnsLeft;animation-duration:7.5s; animation-timing-function:steps(5, jump-end);}
+@keyframes kenburnsLeft{ 0% { transform: scale(1) translate(0, 0); transform-origin: 16% 50%; } 100% { transform: scale(1.25) translate(-20px, 15px); transform-origin: left; }}
