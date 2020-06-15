@@ -55,12 +55,14 @@ var FlipClockManager = function(selector, cls) {
 
 	var initializeClock = function(callback) {
 		var mainHTML = '';
+		mainHTML += generateCounterHtml('fc-date' + FlipClockManager.idx, cls+' flipclock-small fc-date');
 		mainHTML += generateCounterHtml('fc-hours' + FlipClockManager.idx, cls);
 		mainHTML += generateCounterHtml('fc-minutes' + FlipClockManager.idx,cls);
 		//mainHTML += generateCounterHtml('fc-seconds' + FlipClockManager.idx, cls);
 
 		me.mainEl.html(mainHTML);
 
+		me.date   = new FlipClock('#fc-date'   + FlipClockManager.idx);
 		me.hours   = new FlipClock('#fc-hours'   + FlipClockManager.idx);
 		me.minutes = new FlipClock('#fc-minutes' + FlipClockManager.idx);
 		me.seconds = new FlipClock('#fc-seconds' + FlipClockManager.idx);
@@ -76,6 +78,7 @@ var FlipClockManager = function(selector, cls) {
 			initializeClock(function() {
 				var date = new Date();
 
+				me.date.update(date.getDate()+"&nbsp;"+date.toLocaleString('default', { month: 'short' }).toUpperCase());
 				me.hours.update(date.getHours());
 				me.minutes.update(("0"+date.getMinutes()).substr(-2,2));
 				me.seconds.update(date.getSeconds());

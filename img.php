@@ -51,8 +51,11 @@ $height=768;
 #print_r("cache/".pathinfo($filename)['basename']);
 $cachefilename="cache/".pathinfo($filename)['basename'];
 
-if (!file_exists($cachefilename))
-    resize($filename, $cachefilename,$width, $height);
+if (!file_exists($cachefilename)) {
+    #resize($filename, $cachefilename,$width, $height);
+    $setupExports="export MAGICK_HOME=\"\$HOME/ImageMagick/\" ; export DYLD_LIBRARY_PATH=\"\$MAGICK_HOME/lib/\" ";
+    exec("$setupExports ; convert \"$filename\" -resize $width"."x$height -quality 75 \"$cachefilename\"");
+}
 
 $mimetype= mime_content_type($cachefilename);
 ob_start();

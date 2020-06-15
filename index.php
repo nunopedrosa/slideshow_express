@@ -8,7 +8,7 @@ $PIPELINE_SIZE=10;
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <link rel="stylesheet" type="text/css" href="anim.css">
     <!-- Clock settings -->
-    <link rel="stylesheet" href="flip-clock.min.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="flip-clock.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="clock.css" media="screen" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" charset="utf-8"></script>

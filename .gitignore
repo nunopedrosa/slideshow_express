@@ -21,3 +21,8 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+cache
+img
+photos_seen.lst
+photos_to_see.flag
+photos_to_see.lst

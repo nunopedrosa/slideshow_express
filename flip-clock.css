@@ -1,7 +1,7 @@
 .flip-clock {
   display: inline-block;
-  margin-right: 20px;
-  height: 110px;
+  margin-right: 5px;
+  height: 165px;
   min-width: 86px;
   perspective: 240px;
   perspective-origin: 50% 50%;
@@ -13,7 +13,7 @@
   background:    black;
   min-width:     86px;
   height:        50px;
-  font-size:     57px;
+  font-size:     60px;
   text-align:    center;
   margin:        6px;
   line-height:   100px;
@@ -87,26 +87,29 @@
 /* Start of Flip Clock small CSS */
 
 .flip-clock.flipclock-small {
-  margin-right: 10px;
+  position:      absolute;
+  bottom: 0;
+  margin-right: 0px;
   height: 60px;
   min-width: 43px;
 }
 
 .flip-clock.flipclock-small div{
-  min-width:     43px;
+  min-width:     177px;
   height:        25px;
-  font-size:     27px;
+  font-size:     35px;
+  font-weight:   bold;
   margin:        6px;
   line-height:   50px;
 }
 
 .flipclock-small .flip-top {
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 9px 9px 0px 0px;
   top: 0px;
 
 }
 .flipclock-small .flip-bottom {
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 9px 9px;
   top: 25px;
 }
 .flipclock-small .flip-bottom span{
